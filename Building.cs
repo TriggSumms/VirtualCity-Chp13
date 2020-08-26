@@ -2,11 +2,31 @@ using System;
 
 namespace Planner
 {
-    class Building
+    public class Building
     {
-        static void Main(string[] args)
+        // Private Properties
+        private string _designer { get; set; }
+
+        private DateTime _dateConstructed { get; set; }
+
+        private string _address { get; set; }
+
+        private string _owner { get; set; }
+
+        // Public Properties
+        public int Stories { get; set; }
+
+        public double Width { get; set; }
+
+        public double Depth { get; set; }
+
+        public double Volume
         {
-            Console.WriteLine("First commit");
-        }
+            get
+            {
+                return Width * Depth * (3 * Stories);
+            }
+        } 
     }
+
 }
