@@ -4,6 +4,22 @@ namespace Planner
 {
     public class Building
     {
+        //Invoking Process's:
+        public void BuildingRollCall()
+        {
+            Console.WriteLine($"The address of this Building is: {_address}");
+            Console.WriteLine("---------*-------------------------------------------*-----------");
+            Console.WriteLine($"Designed by: {_designer}");
+            Console.WriteLine($"Constructed on ...{_dateConstructed}");
+            Console.WriteLine($"The Investor(s) are... {_owner}");
+            Console.WriteLine($"{Volume} ...a whopping cubic meters of space");
+        }
+
+
+
+
+
+
         // Private Properties
         private string _designer { get; set; }
 
@@ -26,7 +42,17 @@ namespace Planner
             {
                 return Width * Depth * (3 * Stories);
             }
-        } 
+        }
+        public Building(string address) => address = _address;
+        public void Construct()
+        {
+            _dateConstructed = DateTime.Now;
+        }
+        public void Purchase(string investor)
+        {
+            investor = _owner;
+        }
+
     }
 
 }
