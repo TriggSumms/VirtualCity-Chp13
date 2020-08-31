@@ -1,4 +1,5 @@
 using System;
+//using System.Collections.Generic;
 
 namespace Planner
 {
@@ -50,7 +51,7 @@ namespace Planner
         }
         public void Purchase(string investor)
         {
-            investor = _owner;
+            _owner = investor ;
         }
 
     }

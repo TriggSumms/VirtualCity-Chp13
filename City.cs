@@ -12,7 +12,7 @@ namespace Planner
 
         public string YearEstablished { get; set; }
 
-     private List<Building> Buildings { get; set; }
+     public List<Building> Buildings { get; set; }
 
         // A "constructor" is a special method that is run when a class is instantiated
         //  Meaning when some other code says "new BikeStore()" the BikeStore constructor is executed

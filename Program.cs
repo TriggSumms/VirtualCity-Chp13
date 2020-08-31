@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Planner
 {
@@ -47,7 +48,7 @@ namespace Planner
             // Console.WriteLine("Full Building List");
             // Planner.BuildingRollCall();
 
-            foreach (Building Building in megalopolis.Buildings)
+            foreach (Building building in megalopolis.Buildings)
             {
                 //Console.WriteLine("RollCall: ");
                 building.BuildingRollCall();
